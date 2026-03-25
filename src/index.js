@@ -1,10 +1,34 @@
 import "./styles.css";
+import homePage from "./homePage.js";
+import contactPage from "./contactPage.js";
+import menuPage from "./menuPage.js";
 
+const nav = document.querySelector('nav')
 const contentDiv = document.getElementById('content');
 
-console.log("hello mama");
+homePage();
 
-const restaurantDesc = document.createElement('h2')
-restaurantDesc.textContent = "Welcome to my Nonsense Restaurant! Where we cook absolute garbage food!"
+function removeCurrentPage() {
+    while (contentDiv.firstChild){
+        contentDiv.removeChild(contentDiv.firstChild);
+    }
+}
 
-contentDiv.append(restaurantDesc)
+nav.addEventListener('click', (event) => {
+    const button = event.target;
+
+    switch (button.id){
+        case 'contact':
+                removeCurrentPage();
+                contactPage();
+            break;
+        case 'menu':
+                removeCurrentPage();
+                menuPage();
+            break;
+        case 'home':
+                removeCurrentPage();
+                homePage();
+            break;
+    }
+})
