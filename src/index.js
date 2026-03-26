@@ -6,7 +6,7 @@ import menuPage from "./menuPage.js";
 const nav = document.querySelector('nav')
 const contentDiv = document.getElementById('content');
 
-homePage();
+menuPage();
 
 function removeCurrentPage() {
     while (contentDiv.firstChild){
