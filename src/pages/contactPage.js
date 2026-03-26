@@ -1,4 +1,4 @@
-import { Contact } from "./contents.js";
+import { Contact } from "../contents.js";
 
 const contentDiv = document.getElementById('content');
 

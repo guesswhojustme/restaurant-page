@@ -1,12 +1,12 @@
 import "./styles.css";
-import homePage from "./homePage.js";
-import contactPage from "./contactPage.js";
-import menuPage from "./menuPage.js";
+import homePage from "./pages/homePage.js";
+import contactPage from "./pages/contactPage.js";
+import menuPage from "./pages/menuPage.js";
 
 const nav = document.querySelector('nav')
 const contentDiv = document.getElementById('content');
 
-contactPage();
+homePage();
 
 function removeCurrentPage() {
     while (contentDiv.firstChild){
