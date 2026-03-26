@@ -1,4 +1,4 @@
-const Home = {
+export const Home = {
     title: "Absolute Garbage Restaurant",
     subtitle: "Welcome to my Nonsense Restaurant! Where we cook absolute garbage food!",
     cardsCaption: "Our BEST Sellers ",
@@ -9,4 +9,7 @@ const Home = {
     location: "14.6723° N, 73.4851° W"
 }
 
-export default Home;
+export const Contact = {
+    contact: "+63 917 482 6391",
+    email: "sampleemail@gmail.com"
+}

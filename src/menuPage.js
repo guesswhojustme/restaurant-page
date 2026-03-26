@@ -1,4 +1,4 @@
-import Home from "./contents.js";
+import { Home } from "./contents.js";
 
 const contentDiv = document.getElementById('content');
 
